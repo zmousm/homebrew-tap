@@ -11,8 +11,10 @@ class V2rayPlugin < Formula
 
   bottle do
     root_url "https://github.com/zmousm/homebrew-tap/releases/download/v2ray-plugin-1.3.2.20241102"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2511d156f74c25de90ff45b999fe0f16aa4890b4ca3f21ef3a986b05ca698518"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "cf36910fa3f10f16e9b5734e9281f1ec976720329c4fc33fcc860030ceb344ef"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "b249bb02a9d67a9e48444bb9632ebff4c727cdcfa10e50e5bd96043491dca67e"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "022e5c2d3f6ce86a597a27af26a59e3234d52b24a2ec9461d2e9d065b7fb15e4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "11fb175429d477024d7e70f651bcf1bcc3bf626eb2a66f43583fec0371036086"
   end
 
   depends_on "go" => :build
