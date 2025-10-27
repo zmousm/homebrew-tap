@@ -38,20 +38,5 @@ class V2rayPlugin < Formula
   test do
     help = shell_output("#{bin}/v2ray-plugin -h 2>&1")
     assert_match "v2ray-plugin", help
-    # server = fork do
-    #   exec bin/"v2ray-plugin", "-localPort", "54000", "-remoteAddr", "github.com", "-remotePort", "80", "-server"
-    # end
-    # client = fork do
-    #   exec bin/"v2ray-plugin", "-localPort", "54001", "-remotePort", "54000"
-    # end
-    # sleep 2
-    # begin
-    #   system "curl", "localhost:54001"
-    # ensure
-    #   Process.kill 9, server
-    #   Process.wait server
-    #   Process.kill 9, client
-    #   Process.wait client
-    # end
   end
 end
