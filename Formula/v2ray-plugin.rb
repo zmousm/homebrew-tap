@@ -9,6 +9,12 @@ class V2rayPlugin < Formula
 
   head "https://github.com/shadowsocks/v2ray-plugin.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/zmousm/homebrew-tap/releases/download/v2ray-plugin-1.3.2.20241102"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2511d156f74c25de90ff45b999fe0f16aa4890b4ca3f21ef3a986b05ca698518"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "cf36910fa3f10f16e9b5734e9281f1ec976720329c4fc33fcc860030ceb344ef"
+  end
+
   depends_on "go" => :build
 
   def install
