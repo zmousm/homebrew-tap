@@ -1,8 +1,10 @@
 class V2rayPlugin < Formula
   desc "SIP003 plugin based on v2ray"
   homepage "https://github.com/shadowsocks/v2ray-plugin"
-  url "https://github.com/shadowsocks/v2ray-plugin/archive/refs/tags/v1.3.2.tar.gz"
-  sha256 "0ffb0a938bae58ea40a024cb04418c7fecb74f7d807de27ae0589c42307802a4"
+  # pseudo-version, latest commits fix build issues
+  url "https://github.com/shadowsocks/v2ray-plugin/archive/e9af1cdd2549d528deb20a4ab8d61c5fbe51f306.tar.gz"
+  version "1.3.2.20241102"
+  sha256 "c7470b688492028bda5548607061acbbfc3067960266235eaf837240f5f89718"
   license "MIT"
 
   head "https://github.com/shadowsocks/v2ray-plugin.git", branch: "master"
